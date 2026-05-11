@@ -513,3 +513,65 @@ footer { background: var(--primary); border-top: 1px solid var(--card-border); p
 .rank-bar:nth-child(7), .timeline-item:nth-child(7) { animation-delay: 0.48s; }
 .rank-bar:nth-child(8), .timeline-item:nth-child(8) { animation-delay: 0.56s; }
 .rank-bar:nth-child(9), .timeline-item:nth-child(9) { animation-delay: 0.64s; }
+/* Case Study Styling */
+.env-case-study {
+  grid-column: 1 / -1;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 2.5rem;
+  margin: 1rem 0;
+}
+
+.case-study-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.case-study-content p {
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.case-study-callout {
+  background: rgba(233,69,96,0.08);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 2rem 0;
+}
+
+.case-study-callout h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+}
+
+.case-study-callout blockquote {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.8);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.case-study-footnote {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .env-case-study {
+    padding: 1.5rem;
+    grid-column: auto;
+  }
+}
