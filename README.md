@@ -1,11 +1,11 @@
 # Global Infectious Diseases: Interactive Infographic Hub
 
-An educational, single-page static site that visualizes the global burden of the 9 most impactful infectious diseases. Built entirely with HTML, CSS and vanilla JavaScript.
+An educational, single-page static site that visualizes the global burden of the 10 most impactful infectious diseases. Built entirely with HTML, CSS and vanilla JavaScript.
 
 ## What's Inside
 
 - **Global Burden Rankings**: Top infectious diseases ranked by DALYs (GBD/IHME data)
-- **9 Disease Deep Dives**: Lower respiratory infections, diarrhoeal diseases, HIV/AIDS, malaria, TB, hepatitis B and C, influenza, dengue and norovirus
+- **10 Disease Deep Dives**: COVID-19, lower respiratory infections, diarrhoeal diseases, HIV/AIDS, malaria, TB, hepatitis B and C, influenza, dengue and norovirus
 - **Side-by-Side Comparison**: Pathogen type, transmission, deaths and vaccine availability in a single comparison table
 - **Co-Infection Interactions**: Dangerous disease pairings (HIV + TB, flu + bacterial pneumonia, dengue serotype shift, etc.)
 - **Transmission Routes**: Airborne, fecal-oral, vector-borne and bloodborne infographics
@@ -31,9 +31,9 @@ Zero dependencies. No build step required.
 
 ```
 norovirus-info/
-├── index.html    (860 lines). Main page with all content and structure
-├── style.css     (1582 lines). All styles, responsive breakpoints, animations
-└── script.js     (204 lines). Interactive features and scroll behavior
+├── index.html    (~900 lines). Main page with all content and structure
+├── style.css     (~515 lines). All styles, responsive breakpoints, animations
+└── script.js     (~185 lines). Interactive features and scroll behavior
 ```
 
 ## License
