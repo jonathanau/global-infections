@@ -15,7 +15,7 @@ An educational, single-page static site that visualizes the global burden of the
 
 ## Data Sources
 
-CDC, WHO, Global Burden of Disease Study (IHME), ECDC and peer-reviewed research. Data last updated: 2025.
+CDC, WHO, Global Burden of Disease Study (IHME), ECDC and peer-reviewed research.
 
 > **Disclaimer:** This site is for educational purposes only and does not provide medical advice. Always consult healthcare professionals for medical concerns.
 
