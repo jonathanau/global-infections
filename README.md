@@ -27,15 +27,6 @@ CDC, WHO, Global Burden of Disease Study (IHME), ECDC and peer-reviewed research
 
 Zero dependencies. No build step required.
 
-## File Structure
-
-```
-norovirus-info/
-├── index.html    (~900 lines). Main page with all content and structure
-├── style.css     (~515 lines). All styles, responsive breakpoints, animations
-└── script.js     (~185 lines). Interactive features and scroll behavior
-```
-
 ## License
 
 This project is intended for public health education and awareness. See the [LICENSE](LICENSE) file for details.
