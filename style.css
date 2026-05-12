@@ -220,6 +220,8 @@ a:hover { color: var(--accent); }
 .rank-num { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 0.85rem; color: var(--accent2); min-width: 22px; }
 .rank-info { font-weight: 600; color: #fff; font-size: 0.92rem; flex: 1; z-index: 1; }
 .rank-value { font-weight: 700; color: rgba(255,255,255,0.65); font-size: 0.85rem; z-index: 1; white-space: nowrap; }
+.source-text a { color: var(--accent2); }
+.source-text a:hover { color: #fff; }
 
 /* ===== CONTEXT BOX ===== */
 .context-box {

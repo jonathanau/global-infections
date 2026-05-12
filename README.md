@@ -1,10 +1,10 @@
 # Global Infectious Diseases: Interactive Infographic Hub
 
-An educational, single-page static site that visualizes the global burden of the 10 most impactful infectious diseases. Built entirely with HTML, CSS and vanilla JavaScript.
+An educational, single-page static site that visualizes global infectious disease burden and prevention. Built entirely with HTML, CSS and vanilla JavaScript.
 
 ## What's Inside
 
-- **Global Burden Rankings**: Top infectious diseases ranked by DALYs (GBD/IHME data)
+- **Global Burden Rankings**: Leading infectious causes ranked by GBD 2023 DALYs
 - **10 Disease Deep Dives**: COVID-19, lower respiratory infections, diarrhoeal diseases, HIV/AIDS, malaria, TB, hepatitis B and C, influenza, dengue and norovirus
 - **Side-by-Side Comparison**: Pathogen type, transmission, deaths and vaccine availability in a single comparison table
 - **Co-Infection Interactions**: Dangerous disease pairings (HIV + TB, flu + bacterial pneumonia, dengue serotype shift, etc.)
@@ -15,7 +15,7 @@ An educational, single-page static site that visualizes the global burden of the
 
 ## Data Sources
 
-CDC, WHO, Global Burden of Disease Study (IHME), ECDC and peer-reviewed research.
+CDC, WHO, UNAIDS, Global Burden of Disease Study 2023 (IHME), ECDC and peer-reviewed research. Source years vary by disease according to the latest credible release available.
 
 > **Disclaimer:** This site is for educational purposes only and does not provide medical advice. Always consult healthcare professionals for medical concerns.
 
