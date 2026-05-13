@@ -25,11 +25,11 @@ function animateValue(element, start, end, duration) {
     const eased = 1 - Math.pow(1 - progress, 3);
     const current = start + (end - start) * eased;
 
-    if (end >= 10) {
-      element.textContent = current.toFixed(1);
-    } else {
-      element.textContent = Math.floor(current);
-    }
+    const raw = element.getAttribute('data-count');
+    const isDecimal = raw && raw.includes('.');
+    element.textContent = isDecimal
+      ? current.toFixed(1)
+      : Math.floor(current).toString();
 
     if (progress < 1) {
       requestAnimationFrame(update);
@@ -64,17 +64,6 @@ function setupScrollAnimations() {
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
     observer.observe(el);
   });
-}
-
-// ===== TIMER FILL ANIMATION =====
-function setupTimerFill() {
-  const fill = document.getElementById('timerFill');
-  if (!fill) return;
-  setInterval(() => {
-    fill.style.animation = 'none';
-    fill.offsetHeight;
-    fill.style.animation = '';
-  }, 22000);
 }
 
 // ===== NAVIGATION TOGGLE (MOBILE) =====
@@ -175,12 +164,17 @@ function setupSeasonBars() {
 
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
-  animateCounters();
-  setupScrollAnimations();
-  setupTimerFill();
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion) {
+    animateCounters();
+    setupScrollAnimations();
+  }
   setupNavToggle();
   setupNavScroll();
   setupScrollSpy();
-  setupRankBarAnimations();
-  setupSeasonBars();
+  if (!prefersReducedMotion) {
+    setupRankBarAnimations();
+    setupSeasonBars();
+  }
 });

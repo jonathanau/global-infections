@@ -44,6 +44,19 @@ body {
 a { color: var(--accent2); text-decoration: none; transition: color 0.3s; }
 a:hover { color: var(--accent); }
 
+:focus-visible {
+  outline: 2px solid var(--accent2);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent2);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
 /* ===== NAVIGATION ===== */
 .main-nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
@@ -214,9 +227,6 @@ a:hover { color: var(--accent); }
 .rank-4 .rank-bar-fill { background: linear-gradient(90deg, var(--green), #27ae60); }
 .rank-5 .rank-bar-fill { background: linear-gradient(90deg, var(--blue), #2980b9); }
 .rank-6 .rank-bar-fill { background: linear-gradient(90deg, var(--yellow), #f39c12); }
-.rank-7 .rank-bar-fill { background: linear-gradient(90deg, var(--teal), #16a085); }
-.rank-8 .rank-bar-fill { background: linear-gradient(90deg, #e67e22, #d35400); }
-
 .rank-num { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 0.85rem; color: var(--accent2); min-width: 22px; }
 .rank-info { font-weight: 600; color: #fff; font-size: 0.92rem; flex: 1; z-index: 1; }
 .rank-value { font-weight: 700; color: rgba(255,255,255,0.65); font-size: 0.85rem; z-index: 1; white-space: nowrap; }
@@ -535,26 +545,14 @@ footer { background: var(--primary); border-top: 1px solid var(--card-border); p
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
-.infection-card, .comorbidity-card, .rank-bar, .prevention-card, .season-card,
-.env-principle-card, .perspective-card, .spread-card, .timeline-item {
-  animation: fadeInUp 0.6s ease-out both;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-.infection-grid .infection-card:nth-child(2), .comorbidity-grid .comorbidity-card:nth-child(2),
-.env-principle-grid .env-principle-card:nth-child(2),
-.infection-grid .infection-card:nth-child(3), .comorbidity-grid .comorbidity-card:nth-child(3),
-.env-principle-grid .env-principle-card:nth-child(3) { animation-delay: 0.08s; }
-.infection-grid .infection-card:nth-child(4), .comorbidity-grid .comorbidity-card:nth-child(4),
-.env-principle-grid .env-principle-card:nth-child(4) { animation-delay: 0.16s; }
-.infection-grid .infection-card:nth-child(5), .comorbidity-grid .comorbidity-card:nth-child(5),
-.env-principle-grid .env-principle-card:nth-child(5) { animation-delay: 0.24s; }
-.infection-grid .infection-card:nth-child(6), .comorbidity-grid .comorbidity-card:nth-child(6),
-.env-principle-grid .env-principle-card:nth-child(6),
-.spread-card:nth-child(2), .timeline-item:nth-child(2),
-.rank-bar:nth-child(2) { animation-delay: 0.08s; }
-.rank-bar:nth-child(3), .spread-card:nth-child(3), .timeline-item:nth-child(3) { animation-delay: 0.16s; }
-.rank-bar:nth-child(4), .spread-card:nth-child(4), .timeline-item:nth-child(4) { animation-delay: 0.24s; }
-.rank-bar:nth-child(5), .spread-card:nth-child(5), .timeline-item:nth-child(5) { animation-delay: 0.32s; }
-.rank-bar:nth-child(6), .timeline-item:nth-child(6) { animation-delay: 0.4s; }
-.rank-bar:nth-child(7), .timeline-item:nth-child(7) { animation-delay: 0.48s; }
-.rank-bar:nth-child(8), .timeline-item:nth-child(8) { animation-delay: 0.56s; }
-.rank-bar:nth-child(9), .timeline-item:nth-child(9) { animation-delay: 0.64s; }

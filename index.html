@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global Infectious Diseases: Interactive Infographic Hub</title>
-<meta name="description" content="Explore the global burden of infectious diseases — COVID-19, TB, malaria, HIV, norovirus and more — with interactive data from WHO, CDC, and GBD 2023. Charts, co-infection risks, and prevention strategies.">
+    <title>Global Infectious Diseases: Interactive Infographic Hub</title>
+    <meta name="description" content="Explore the global burden of infectious diseases — COVID-19, TB, malaria, HIV, norovirus and more — with interactive data from WHO, CDC, and GBD 2023. Charts, co-infection risks, and prevention strategies.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://infectious-diseases.onrender.com/">
 <meta property="og:title" content="Global Infectious Diseases: Interactive Infographic Hub">
@@ -40,7 +40,7 @@
         "url": "https://github.com/jonathanau"
       },
       "license": "https://opensource.org/licenses/MIT",
-      "dateModified": "2025-01-01"
+      "dateModified": "2026-05-12"
     },
     {
       "@type": "Dataset",
@@ -168,11 +168,17 @@
 </script>
 </head>
 <body>
+<noscript>
+  <p style="text-align:center;padding:1rem;background:#1a1a2e;color:#ccc;">
+    JavaScript is disabled. Some animations and counters will not run,
+    but all content on this page is fully readable without JavaScript.
+  </p>
+</noscript>
 
 <!-- NAVIGATION -->
 <nav class="main-nav" id="mainNav">
   <div class="nav-container">
-    <a href="#hero" class="nav-brand">🧬 Global Infections</a>
+    <a href="#hero" class="nav-brand"><span aria-hidden="true">🧬</span> Global Infections</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero">Overview</a></li>
@@ -190,7 +196,7 @@
 <header class="hero" id="hero">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>🦠 Global Infectious Diseases</h1>
+    <h1><span aria-hidden="true">🦠</span> Global Infectious Diseases</h1>
     <p class="hero-subtitle">Burden, Transmission, and Prevention</p>
     <p class="hero-desc">Infectious diseases remain among the leading causes of death and disability worldwide. From pneumonia and tuberculosis to malaria and norovirus, understanding how these diseases spread, who they affect, and how to prevent them can save lives.</p>
     <div class="hero-btns">
@@ -279,7 +285,7 @@
   </div>
 
   <div class="context-box">
-    <h4>⚠️ Why DALY Rankings Can Shift</h4>
+    <h4><span aria-hidden="true">⚠️</span> Why DALY Rankings Can Shift</h4>
     <p>GBD 2023 shows how sharply the pandemic distorted earlier rankings: COVID-19 was a leading global cause of health loss in 2021, but it was no longer among the top 25 global DALY causes in 2023. Lower respiratory infections returned as the leading infectious cause of DALYs, while diarrhoeal diseases, HIV/AIDS, tuberculosis, and malaria continued long-term declines in age-standardised DALY rates. Norovirus causes enormous illness volume, but most cases are short-lived, so its DALY ranking is lower than its case count suggests.</p>
   </div>
 </section>
@@ -297,7 +303,7 @@
     <section id="covid-19" aria-label="COVID-19 Disease Profile">
     <div class="infection-card" id="disease-covid">
       <div class="infection-header header-covid">
-        <span class="inf-icon">🦠</span>
+        <span class="inf-icon" aria-hidden="true">🦠</span>
         <div>
           <h3>COVID-19</h3>
           <p class="card-subtitle">A global pandemic caused by the SARS-CoV-2 virus</p>
@@ -315,7 +321,7 @@
           <p>SARS-CoV-2 spreads through shared air and continues to cause acute illness, severe disease in high-risk groups, and post-COVID conditions. Vaccination and population immunity sharply reduced reported mortality after the 2020-2022 emergency phase, but surveillance is weaker now, so reported deaths understate the full burden in many places.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>COVID-19 vaccination &amp; boosters</li>
             <li>High-quality masking (N95/KN95)</li>
@@ -332,7 +338,7 @@
     <section id="lower-respiratory-infections" aria-label="Lower Respiratory Infections Disease Profile">
     <div class="infection-card" id="disease-lri">
     <div class="infection-header header-red">
-      <span class="inf-icon">🫁</span>
+      <span class="inf-icon" aria-hidden="true">🫁</span>
       <div>
         <h3>Lower Respiratory Infections</h3>
         <p class="card-subtitle">Primarily pneumonia and bronchiolitis</p>
@@ -349,7 +355,7 @@
           <p>Lower respiratory infections (LRI), primarily pneumonia and bronchiolitis, are the highest-burden infectious disease group by deaths and DALYs. In 2023, S. pneumoniae caused about 634,000 LRI deaths. Vaccines like PCV, Hib, influenza, and newer RSV tools have reduced child mortality, but children under 5 and adults over 70 still carry the highest burden.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>Pneumococcal vaccination (PCV13/PCV20)</li>
             <li>Hib and influenza vaccination</li>
@@ -366,7 +372,7 @@
     <section id="diarrhoeal-diseases" aria-label="Diarrhoeal Diseases Disease Profile">
     <div class="infection-card" id="disease-diarrhoea">
       <div class="infection-header header-orange">
-        <span class="inf-icon">🤢</span>
+        <span class="inf-icon" aria-hidden="true">🤢</span>
         <div>
           <h3>Diarrhoeal Diseases</h3>
           <p class="card-subtitle">A leading killer of children under 5 worldwide</p>
@@ -384,7 +390,7 @@
           <p>Diarrhoeal diseases are caused by bacterial, viral, and parasitic pathogens spread through contaminated water, food, and surfaces. WHO identifies diarrhoea as the third leading cause of death among children aged 1-59 months. Rotavirus vaccination, oral rehydration salts, zinc treatment, safe water, sanitation, and handwashing remain the highest-impact interventions.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>Safe drinking water &amp; sanitation (WASH)</li>
             <li>Rotavirus vaccination</li>
@@ -401,7 +407,7 @@
     <section id="hiv-aids" aria-label="HIV and AIDS Disease Profile">
     <div class="infection-card" id="disease-hiv">
       <div class="infection-header header-purple">
-        <span class="inf-icon">🔴</span>
+        <span class="inf-icon" aria-hidden="true">🔴</span>
         <div>
           <h3>HIV / AIDS</h3>
           <p class="card-subtitle">A four-decade pandemic transformed by treatment</p>
@@ -419,7 +425,7 @@
           <p>Human Immunodeficiency Virus attacks the immune system, progressing to AIDS without treatment. Antiretroviral therapy (ART) transformed HIV from a death sentence into a manageable chronic condition, and 31.6 million people were receiving ART in 2024. Prevention gaps remain: new infections were nearly unchanged from the prior year, and key populations face disproportionate risk.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>ART as prevention (undetectable = untransmittable)</li>
             <li>PrEP (pre-exposure prophylaxis)</li>
@@ -436,7 +442,7 @@
     <section id="malaria" aria-label="Malaria Disease Profile">
     <div class="infection-card" id="disease-malaria">
       <div class="infection-header header-green">
-        <span class="inf-icon">🦟</span>
+        <span class="inf-icon" aria-hidden="true">🦟</span>
         <div>
           <h3>Malaria</h3>
           <p class="card-subtitle">An ancient killer spread by mosquitoes</p>
@@ -454,7 +460,7 @@
           <p>Malaria is a mosquito-borne parasitic disease transmitted by Anopheles mosquitoes. In 2024, the WHO African Region accounted for about 95% of malaria cases and 95% of deaths worldwide. Drug and insecticide resistance are growing threats, and children under 5 account for roughly three quarters of malaria deaths in the Region.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>Insecticide-treated bed nets (ITNs)</li>
             <li>Indoor residual spraying (IRS)</li>
@@ -471,7 +477,7 @@
     <section id="tuberculosis" aria-label="Tuberculosis Disease Profile">
     <div class="infection-card" id="disease-tb">
       <div class="infection-header header-blue">
-        <span class="inf-icon">🦠</span>
+        <span class="inf-icon" aria-hidden="true">🦠</span>
         <div>
           <h3>Tuberculosis (TB)</h3>
           <p class="card-subtitle">The deadliest single infectious agent</p>
@@ -489,7 +495,7 @@
           <p>Tuberculosis is caused by Mycobacterium tuberculosis and spreads through the air. In 2024, 10.7 million people fell ill and 1.23 million died, including 150,000 people with HIV. Drug-resistant TB remains a health security threat: only about 2 in 5 people with drug-resistant TB accessed treatment in 2024. The WHO End TB Strategy milestones remain far off track.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>BCG vaccination (children in endemic areas)</li>
             <li>Early detection &amp; treatment (DOTS strategy)</li>
@@ -506,7 +512,7 @@
     <section id="hepatitis-b-c" aria-label="Hepatitis B and C Disease Profile">
     <div class="infection-card" id="disease-hepatitis">
       <div class="infection-header header-yellow">
-        <span class="inf-icon">🧫</span>
+        <span class="inf-icon" aria-hidden="true">🧫</span>
         <div>
           <h3>Hepatitis B &amp; C</h3>
           <p class="card-subtitle">A "silent epidemic" destroying livers worldwide</p>
@@ -524,7 +530,7 @@
           <p>Hepatitis B and C cause chronic liver inflammation that can progress to cirrhosis and liver cancer. HBV is vaccine-preventable, yet less than 5% of people living with chronic HBV were receiving treatment in 2024. HCV has no vaccine, but direct-acting antivirals cure most infections. WHO's 2026 report says elimination is still off track without faster testing and treatment scale-up.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>HBV vaccination (routine childhood immunization)</li>
             <li>Safe injection practices</li>
@@ -541,7 +547,7 @@
     <section id="influenza" aria-label="Influenza Disease Profile">
     <div class="infection-card" id="disease-flu">
       <div class="infection-header header-teal">
-        <span class="inf-icon">🤧</span>
+        <span class="inf-icon" aria-hidden="true">🤧</span>
         <div>
           <h3>Influenza (Flu)</h3>
           <p class="card-subtitle">The perennial pandemic threat</p>
@@ -559,7 +565,7 @@
           <p>Influenza is a highly contagious respiratory illness. Seasonal epidemics peak in winter months, while influenza A viruses can also cause pandemics through antigenic shift. Annual vaccination is the primary defense, but antigenic drift requires updated formulations each year. WHO estimates seasonal influenza causes 3-5 million severe cases and 290,000-650,000 respiratory deaths annually.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>Annual flu vaccination</li>
             <li>Hand hygiene &amp; respiratory etiquette</li>
@@ -576,7 +582,7 @@
     <section id="dengue-fever" aria-label="Dengue Fever Disease Profile">
     <div class="infection-card" id="disease-dengue">
       <div class="infection-header header-dengue">
-        <span class="inf-icon">🌡️</span>
+        <span class="inf-icon" aria-hidden="true">🌡️</span>
         <div>
           <h3>Dengue Fever</h3>
           <p class="card-subtitle">The fastest-spreading mosquito-borne disease</p>
@@ -594,7 +600,7 @@
           <p>Dengue is caused by four distinct virus serotypes. Infection with one provides lifelong immunity to that type but can increase severe dengue risk after later infection with another serotype. WHO recorded more than 14.6 million reported cases and more than 12,000 reported deaths in 2024, the highest burden on record. Climate change, urbanization, travel, and Aedes mosquito expansion are widening risk.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>Mosquito bite prevention (repellent, nets, clothing)</li>
             <li>Eliminate standing water breeding sites</li>
@@ -611,7 +617,7 @@
     <section id="norovirus" aria-label="Norovirus Disease Profile">
     <div class="infection-card" id="disease-norovirus">
       <div class="infection-header header-norovirus">
-        <span class="inf-icon">🦠</span>
+        <span class="inf-icon" aria-hidden="true">🦠</span>
         <div>
           <h3>Norovirus</h3>
           <p class="card-subtitle">The world's #1 cause of acute gastroenteritis</p>
@@ -630,7 +636,7 @@
           <p>Norovirus is a non-enveloped RNA virus in the Caliciviridae family and the leading cause of acute gastroenteritis worldwide. It spreads through contaminated food or water, person-to-person contact, contaminated surfaces, and aerosolized vomit. Infected people shed billions of viral particles, and a very small dose can cause illness. The virus is resilient on surfaces and resists many common disinfectants, so soap-and-water handwashing and bleach-based cleanup are central controls.</p>
         </div>
         <div class="prevention-tips">
-          <h4>🛡️ Prevention:</h4>
+          <h4><span aria-hidden="true">🛡️</span> Prevention:</h4>
           <ul>
             <li>Wash hands with soap &amp; water (20+ seconds)</li>
             <li>Stay home when sick (48 hrs after recovery)</li>
@@ -649,7 +655,7 @@
 <!-- ==================== COMPARISON TABLE ==================== -->
 <section id="comparison" class="section alt-bg">
   <div class="section-header">
-    <h2 aria-label="Side-by-Side Comparison">📊 Side-by-Side Comparison</h2>
+    <h2 aria-label="Side-by-Side Comparison"><span aria-hidden="true">📊</span> Side-by-Side Comparison</h2>
     <div class="section-line"></div>
     <p class="section-intro">How do the world's most common infectious diseases stack up against each other?</p>
   </div>
@@ -658,90 +664,90 @@
     <table>
       <thead>
         <tr>
-          <th>Disease</th>
-          <th>Pathogen Type</th>
-          <th>Transmission</th>
-          <th>Recent Death Burden</th>
-          <th>Vaccine Available?</th>
+          <th scope="col">Disease</th>
+          <th scope="col">Pathogen Type</th>
+          <th scope="col">Transmission</th>
+          <th scope="col">Recent Death Burden</th>
+          <th scope="col">Vaccine Available?</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><span class="tb-icon">🦠</span> COVID-19</td>
+          <td><span class="tb-icon" aria-hidden="true">🦠</span> COVID-19</td>
           <td>RNA Virus (SARS-CoV-2)</td>
           <td>Aerosols, droplets</td>
           <td class="death-high">~70K reported (2024)</td>
-          <td><span class="vax-yes">✅ Highly effective</span></td>
+          <td><span class="vax-yes"><span aria-hidden="true">✅</span> Highly effective</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🫁</span> Lower Respiratory</td>
+          <td><span class="tb-icon" aria-hidden="true">🫁</span> Lower Respiratory</td>
           <td>Bacteria, viruses, fungi</td>
           <td>Airborne droplets</td>
           <td class="death-high">2.50M (2023)</td>
-          <td><span class="vax-yes">✅ PCV, Hib, Flu</span></td>
+          <td><span class="vax-yes"><span aria-hidden="true">✅</span> PCV, Hib, Flu</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🤢</span> Diarrhoeal</td>
+          <td><span class="tb-icon" aria-hidden="true">🤢</span> Diarrhoeal</td>
           <td>Bacteria, viruses, parasites</td>
           <td>Fecal-oral, water, food</td>
           <td class="death-high">~495K children under 10</td>
-          <td><span class="vax-partial">✅ Rotavirus only</span></td>
+          <td><span class="vax-partial"><span aria-hidden="true">✅</span> Rotavirus only</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🔴</span> HIV/AIDS</td>
+          <td><span class="tb-icon" aria-hidden="true">🔴</span> HIV/AIDS</td>
           <td>Retrovirus</td>
           <td>Blood, sexual, perinatal</td>
           <td>630K (2024)</td>
-          <td><span class="vax-no">❌ None</span></td>
+          <td><span class="vax-no"><span aria-hidden="true">❌</span> None</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🦟</span> Malaria</td>
+          <td><span class="tb-icon" aria-hidden="true">🦟</span> Malaria</td>
           <td>Parasite (Plasmodium)</td>
           <td>Mosquito vector</td>
           <td>610K (2024)</td>
-          <td><span class="vax-yes">✅ RTS,S / R21</span></td>
+          <td><span class="vax-yes"><span aria-hidden="true">✅</span> RTS,S / R21</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🦠</span> Tuberculosis</td>
+          <td><span class="tb-icon" aria-hidden="true">🦠</span> Tuberculosis</td>
           <td>Bacterium (M. tuberculosis)</td>
           <td>Airborne droplets</td>
           <td>1.23M (2024)</td>
-          <td><span class="vax-partial">⚠️ BCG (limited adult)</span></td>
+          <td><span class="vax-partial"><span aria-hidden="true">⚠️</span> BCG (limited adult)</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🤧</span> Influenza</td>
+          <td><span class="tb-icon" aria-hidden="true">🤧</span> Influenza</td>
           <td>Influenza viruses</td>
           <td>Airborne, droplets, surfaces</td>
           <td>290K–650K</td>
-          <td><span class="vax-yes">✅ Seasonal annual</span></td>
+          <td><span class="vax-yes"><span aria-hidden="true">✅</span> Seasonal annual</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🧫</span> Hepatitis B &amp; C</td>
+          <td><span class="tb-icon" aria-hidden="true">🧫</span> Hepatitis B &amp; C</td>
           <td>Hepadnavirus / Flavivirus</td>
           <td>Blood, bodily fluids</td>
           <td>1.3M (2024)</td>
-          <td><span class="vax-partial">✅ HBV / ❌ HCV</span></td>
+          <td><span class="vax-partial"><span aria-hidden="true">✅</span> HBV / <span aria-hidden="true">❌</span> HCV</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🌡️</span> Dengue</td>
+          <td><span class="tb-icon" aria-hidden="true">🌡️</span> Dengue</td>
           <td>Flavivirus (4 serotypes)</td>
           <td>Mosquito vector (Aedes)</td>
           <td>>12K reported (2024)</td>
-          <td><span class="vax-yes">✅ Qdenga (endemic)</span></td>
+          <td><span class="vax-yes"><span aria-hidden="true">✅</span> Qdenga (endemic)</span></td>
         </tr>
         <tr>
-          <td><span class="tb-icon">🦠</span> Norovirus</td>
+          <td><span class="tb-icon" aria-hidden="true">🦠</span> Norovirus</td>
           <td>Calicivirus (RNA)</td>
           <td>Fecal-oral, surfaces, aerosol</td>
           <td>~200K global</td>
-          <td><span class="vax-no">❌ None</span></td>
+          <td><span class="vax-no"><span aria-hidden="true">❌</span> None</span></td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="key-insight-box">
-    <h4>🔑 Key Insight: The Vaccine Gap</h4>
+    <h4><span aria-hidden="true">🔑</span> Key Insight: The Vaccine Gap</h4>
     <p>Some major infectious burdens have vaccines or preventive tools, but coverage and access gaps remain large. Lower respiratory infections depend on a mix of PCV, Hib, influenza, RSV, and maternal or childhood immunization strategies; diarrhoeal disease prevention still depends heavily on WASH and rotavirus coverage; TB and HIV still lack broadly protective vaccines for all ages. Norovirus, despite causing hundreds of millions of cases annually, still has no approved vaccine.</p>
   </div>
 </section>
@@ -749,56 +755,56 @@
 <!-- ==================== CO-INFECTIONS ==================== -->
 <section id="co-infections" class="section">
   <div class="section-header">
-    <h2 aria-label="Dangerous Co-Infections &amp; Interactions">⚡ Dangerous Co-Infections &amp; Interactions</h2>
+    <h2 aria-label="Dangerous Co-Infections &amp; Interactions"><span aria-hidden="true">⚡</span> Dangerous Co-Infections &amp; Interactions</h2>
     <div class="section-line"></div>
     <p class="section-intro">When two or more infectious diseases overlap in a person or population, the results can be catastrophic. Here are seven well-documented dangerous interactions.</p>
   </div>
 
   <div class="comorbidity-grid">
     <div class="comorbidity-card">
-      <div class="combo-icon">🔴</div>
+      <div class="combo-icon" aria-hidden="true">🔴</div>
       <h4>HIV + Tuberculosis</h4>
       <p>TB is the #1 cause of death among people living with HIV. HIV weakens the immune system, making latent TB 20–30× more likely to become active. This lethal synergy killed an estimated 150,000 people with HIV in 2024.</p>
       <div class="arrow">→</div>
       <span class="result">Lethal synergy</span>
     </div>
     <div class="comorbidity-card">
-      <div class="combo-icon">🟡</div>
+      <div class="combo-icon" aria-hidden="true">🟡</div>
       <h4>Malaria + Malnutrition</h4>
       <p>Malaria causes severe anemia and metabolic stress. Malnourished children are more susceptible to severe malaria, and repeated malaria infections worsen nutritional status, creating a devastating feedback loop.</p>
       <div class="arrow">→</div>
       <span class="result">Vicious cycle</span>
     </div>
     <div class="comorbidity-card">
-      <div class="combo-icon">🟠</div>
+      <div class="combo-icon" aria-hidden="true">🟠</div>
       <h4>Influenza + Bacterial Pneumonia</h4>
       <p>Influenza damages the respiratory epithelium, creating openings for S. pneumoniae and S. aureus. Up to 50% of flu-related deaths involve secondary bacterial pneumonia, one of the deadliest co-infections.</p>
       <div class="arrow">→</div>
       <span class="result">Secondary infection</span>
     </div>
     <div class="comorbidity-card">
-      <div class="combo-icon">🟢</div>
+      <div class="combo-icon" aria-hidden="true">🟢</div>
       <h4>Dengue Serotype Shift</h4>
       <p>A second infection with a different dengue serotype triggers antibody-dependent enhancement (ADE), dramatically increasing the risk of severe dengue, hemorrhagic fever, and death, especially in children.</p>
       <div class="arrow">→</div>
       <span class="result">Enhanced severity</span>
     </div>
     <div class="comorbidity-card">
-      <div class="combo-icon">⚪</div>
+      <div class="combo-icon" aria-hidden="true">⚪</div>
       <h4>Norovirus + Dehydration</h4>
       <p>Norovirus causes rapid fluid loss through vomiting and diarrhea. In vulnerable populations (the elderly, infants, and immunocompromised), severe dehydration can lead to hospitalization and death.</p>
       <div class="arrow">→</div>
       <span class="result">~200K global deaths/year</span>
     </div>
     <div class="comorbidity-card">
-      <div class="combo-icon">🔵</div>
+      <div class="combo-icon" aria-hidden="true">🔵</div>
       <h4>Hepatitis B + D</h4>
       <p>Hepatitis D virus (HDV) can only infect people already carrying HBV. Co-infection accelerates liver disease progression, with 70–80% developing cirrhosis compared to 15–30% with HBV alone.</p>
       <div class="arrow">→</div>
       <span class="result">Accelerated cirrhosis</span>
     </div>
     <div class="comorbidity-card">
-      <div class="combo-icon">🦠</div>
+      <div class="combo-icon" aria-hidden="true">🦠</div>
       <h4>COVID-19 + Influenza</h4>
       <p>Concurrent infection with COVID-19 and the flu significantly increases the risk of severe pneumonia and death. This "twindemic" risk is highest in winter, putting massive strain on hospital systems and critical care capacity.</p>
       <div class="arrow">→</div>
@@ -810,7 +816,7 @@
 <!-- ==================== HOW DISEASES SPREAD ==================== -->
 <section id="transmission" class="section alt-bg">
   <div class="section-header">
-    <h2 aria-label="Common Transmission Routes">🔗 Common Transmission Routes</h2>
+    <h2 aria-label="Common Transmission Routes"><span aria-hidden="true">🔗</span> Common Transmission Routes</h2>
     <div class="section-line"></div>
     <p class="section-intro">Understanding how pathogens move is the first step to stopping them. Here are the main transmission routes shared by the world's most common infections.</p>
   </div>
@@ -818,22 +824,22 @@
   <div class="infographic-container">
     <div class="infographic-row">
       <div class="spread-card">
-        <div class="spread-icon">🌬️</div>
+        <div class="spread-icon" aria-hidden="true">🌬️</div>
         <h4>Airborne / Droplets</h4>
         <p>Coughing, sneezing, talking, and even breathing release pathogen-laden droplets and aerosols. <strong>COVID-19, TB, influenza, and pneumonia</strong> all exploit this route.</p>
       </div>
       <div class="spread-card">
-        <div class="spread-icon">🍽️</div>
+        <div class="spread-icon" aria-hidden="true">🍽️</div>
         <h4>Fecal-Oral / Contaminated Food &amp; Water</h4>
         <p>Pathogens in feces contaminate food, water, and surfaces. <strong>Norovirus, cholera, hepatitis A &amp; E</strong>, and many diarrheal diseases spread this way.</p>
       </div>
       <div class="spread-card">
-        <div class="spread-icon">🩸</div>
+        <div class="spread-icon" aria-hidden="true">🩸</div>
         <h4>Blood &amp; Bodily Fluids</h4>
         <p>Contact with infected blood, semen, or other fluids transmits <strong>HIV, hepatitis B &amp; C</strong>. Sharing needles and unsafe transfusions are major risks.</p>
       </div>
       <div class="spread-card">
-        <div class="spread-icon">🦟</div>
+        <div class="spread-icon" aria-hidden="true">🦟</div>
         <h4>Vector-Borne (Insects)</h4>
         <p>Mosquitoes, ticks, and flies carry pathogens between hosts. <strong>Malaria, dengue</strong>, Zika, and yellow fever all depend on arthropod vectors.</p>
       </div>
@@ -850,44 +856,44 @@
 <!-- ==================== ENCLOSED ENVIRONMENTS ==================== -->
 <section id="enclosed-environments" class="section">
   <div class="section-header">
-    <h2 aria-label="Enclosed Environments &amp; Disease Amplification">🏢 Enclosed Environments &amp; Disease Amplification</h2>
+    <h2 aria-label="Enclosed Environments &amp; Disease Amplification"><span aria-hidden="true">🏢</span> Enclosed Environments &amp; Disease Amplification</h2>
     <div class="section-line"></div>
     <p class="section-intro">Every infectious disease on this site is amplified by certain environments. When people share air, water, food, or close contact in enclosed spaces, pathogens find ideal conditions to spread. This isn't unique to any one disease - it's a universal principle of outbreak dynamics.</p>
   </div>
 
   <div class="env-principle-grid">
     <div class="env-principle-card">
-      <div class="ep-icon">🏢</div>
+      <div class="ep-icon" aria-hidden="true">🏢</div>
       <h4>Shared Air: Respiratory Diseases</h4>
       <p><strong>COVID-19, Tuberculosis, influenza, pneumonia</strong>. These spread through airborne droplets and aerosols in enclosed, poorly ventilated spaces. COVID-19 and TB thrive in crowded housing. Influenza ripples through offices and schools. Improving ventilation and air filtration is the universal countermeasure.</p>
     </div>
     <div class="env-principle-card">
-      <div class="ep-icon">🍽️</div>
+      <div class="ep-icon" aria-hidden="true">🍽️</div>
       <h4>Shared Food &amp; Water: Enteric Diseases</h4>
       <p><strong>Norovirus, cholera, hepatitis A, diarrhoeal diseases</strong> all spread through contaminated food, water, and surfaces.</p>
     </div>
     <div class="env-principle-card">
-      <div class="ep-icon">🛏️</div>
+      <div class="ep-icon" aria-hidden="true">🛏️</div>
       <h4>Shared Living Quarters: Contact Diseases</h4>
       <p><strong>Norovirus, scabies, meningitis, respiratory infections</strong>; dormitories, military barracks, nursing homes, refugee camps, and cruise ship cabins force prolonged close contact. Person-to-person transmission is the dominant route for most norovirus outbreaks.</p>
     </div>
     <div class="env-principle-card">
-      <div class="ep-icon">🩸</div>
+      <div class="ep-icon" aria-hidden="true">🩸</div>
       <h4>Inadequate Sanitation: Bloodborne &amp; Waterborne Diseases</h4>
       <p><strong>HIV, hepatitis B &amp; C, cholera, typhoid</strong>. Where sterilization protocols fail, bloodborne and waterborne pathogens spread. Unsafe medical injections remain a leading cause of hepatitis C in low-income countries. Contaminated water drives cholera in conflict zones and after natural disasters.</p>
     </div>
     <div class="env-principle-card">
-      <div class="ep-icon">🦟</div>
+      <div class="ep-icon" aria-hidden="true">🦟</div>
       <h4>Stagnant Water &amp; Tropical Environments: Vector-Borne Diseases</h4>
       <p><strong>Malaria, dengue, Zika, yellow fever</strong>. Standing water in urban slums, construction sites, and flooded areas creates mosquito breeding grounds. Deforestation and climate change are pushing these diseases into new areas, including parts of Europe.</p>
     </div>
     <div class="env-principle-card">
-      <div class="ep-icon">🐭</div>
+      <div class="ep-icon" aria-hidden="true">🐭</div>
       <h4>Rodent-Infested Enclosures: Hantavirus</h4>
       <p><strong>Hantaviruses</strong>. Cabins, sheds, barns, and crawl spaces become risky when infected rodent urine, droppings, saliva, or nesting material is stirred into contaminated air. These viruses can cause severe lung disease in the Americas and kidney and bleeding disease in Europe and Asia. Control rodents, seal entry points, ventilate before cleaning, and wet-clean with disinfectant or bleach; never sweep or vacuum droppings dry.</p>
     </div>
     <div class="env-principle-card">
-      <div class="ep-icon">🫁</div>
+      <div class="ep-icon" aria-hidden="true">🫁</div>
       <h4>Crowded Healthcare Settings: Everything</h4>
       <p>Hospitals and clinics concentrate every risk factor: shared air, shared surfaces, vulnerable patients, and high pathogen loads. <strong>Norovirus, TB, MRSA, flu</strong>. Healthcare-associated infections (HAIs) affect 1 in 31 hospital patients in the U.S. annually.</p>
     </div>
@@ -897,24 +903,24 @@
 
   <div class="perspective-grid">
     <div class="perspective-card highlight-perspective">
-      <div class="perspective-icon">📊</div>
+      <div class="perspective-icon" aria-hidden="true">📊</div>
       <h4>Surveillance Bias Is Real</h4>
       <p>Cruise ships are required to report gastrointestinal illness to the CDC when ≥3% are affected. Most restaurants, schools, and nursing homes have no equivalent mandatory reporting. Outbreaks on land go undetected; at sea, they're caught early, skewing public perception.</p>
     </div>
     <div class="perspective-card">
-      <div class="perspective-icon">🎓</div>
+      <div class="perspective-icon" aria-hidden="true">🎓</div>
       <h4>What We've Learned</h4>
       <p>Studying outbreaks on cruise ships has produced critical public health insights, now used everywhere: better hand hygiene protocols, faster outbreak detection, improved disinfection standards for food service, and the CDC's Vessel Sanitation Program model, adapted for nursing homes and hospitals.</p>
     </div>
     <div class="perspective-card">
-      <div class="perspective-icon">🌍</div>
+      <div class="perspective-icon" aria-hidden="true">🌍</div>
       <h4>Every Country, Every Setting</h4>
       <p>Disease amplification happens everywhere: Ebola in West African funeral rites, MERS in South Korean hospitals, measles in under-vaccinated communities, cholera in Yemeni displacement camps. The principle is universal: enclosed spaces + pathogens + susceptible people = outbreaks.</p>
     </div>
   </div>
 
   <div class="key-insight-box">
-    <h4>🔑 Key Takeaway</h4>
+    <h4><span aria-hidden="true">🔑</span> Key Takeaway</h4>
     <p>The risk isn't cruise ships, hospitals, or restaurants specifically; it's any environment where many people share air, water, food, and surfaces in close contact. Understanding these dynamics helps prevent outbreaks in every setting, from schools to nursing homes to office buildings.</p>
   </div>
 </section>
@@ -922,46 +928,46 @@
 <!-- ==================== PREVENTION ==================== -->
 <section id="prevention" class="section alt-bg">
   <div class="section-header">
-    <h2 aria-label="Universal Prevention Strategies">🛡️ Universal Prevention Strategies</h2>
+    <h2 aria-label="Universal Prevention Strategies"><span aria-hidden="true">🛡️</span> Universal Prevention Strategies</h2>
     <div class="section-line"></div>
     <p class="section-intro">While each disease has specific countermeasures, these <strong>core principles</strong> apply broadly across infectious diseases.</p>
   </div>
 
   <div class="prevention-grid">
     <div class="prevention-card">
-      <div class="prevention-icon">🧼</div>
+      <div class="prevention-icon" aria-hidden="true">🧼</div>
       <h4>Hand Hygiene: #1 Defense</h4>
       <p>Wash with soap and warm water for <strong>20+ seconds</strong>. The most effective single action against norovirus, diarrheal diseases, flu, and more. Alcohol sanitizers don't kill all pathogens (<strong>especially norovirus</strong>).</p>
     </div>
     <div class="prevention-card">
-      <div class="prevention-icon">💉</div>
+      <div class="prevention-icon" aria-hidden="true">💉</div>
       <h4>Stay Current on Vaccines</h4>
       <p>Vaccines exist for <strong>flu, pneumonia, hepatitis B, rotavirus, measles, meningitis, TB (BCG), malaria, dengue</strong>. Each prevents millions of deaths annually. Check travel vaccines before international trips.</p>
     </div>
     <div class="prevention-card">
-      <div class="prevention-icon">🚫</div>
+      <div class="prevention-icon" aria-hidden="true">🚫</div>
       <h4>Stay Home When Sick</h4>
       <p>Do not prepare food or care for others while symptomatic. Wait <strong>48 hours</strong> after symptoms stop. This single action prevents exponential spread in schools, workplaces, and communities.</p>
     </div>
     <div class="prevention-card">
-      <div class="prevention-icon">🧴</div>
+      <div class="prevention-icon" aria-hidden="true">🧴</div>
       <h4>Disinfect Surfaces Properly</h4>
       <p>Use <strong>chlorine bleach</strong> (1,000–5,000 ppm) or EPA-registered disinfectants. Norovirus can survive standard cleaners. Clean immediately after vomiting or diarrhea incidents.</p>
     </div>
     <div class="prevention-card">
-      <div class="prevention-icon">🥗</div>
+      <div class="prevention-icon" aria-hidden="true">🥗</div>
       <h4>Safe Food &amp; Water</h4>
       <p>Cook meats and shellfish thoroughly. Wash produce. Drink treated water when traveling. Avoid raw oysters. Norovirus, cholera, hepatitis A, and parasites all spread through food and water.</p>
     </div>
     <div class="prevention-card">
-      <div class="prevention-icon">🦟</div>
+      <div class="prevention-icon" aria-hidden="true">🦟</div>
       <h4>Vector Control</h4>
       <p>Use insect repellent, bed nets, and eliminate standing water. Protects against malaria, dengue, Zika, yellow fever, and chikungunya, all transmitted by mosquitoes.</p>
     </div>
   </div>
 
   <div class="myth-bust">
-    <h3 aria-label="Myths vs. Facts">❌ Myths vs. Facts</h3>
+    <h3 aria-label="Myths vs. Facts"><span aria-hidden="true">❌</span> Myths vs. Facts</h3>
     <div class="myth-grid">
       <div class="myth-item">
         <span class="myth-label">"Hand sanitizer kills norovirus"</span>
@@ -969,11 +975,11 @@
       </div>
       <div class="myth-item">
         <span class="myth-label">"COVID-19 is just the flu"</span>
-        <span class="myth-fact error">❌ WRONG; COVID-19 is a distinct disease with different severe-risk patterns and post-COVID complications.</span>
+        <span class="myth-fact error"><span aria-hidden="true">❌</span> WRONG; COVID-19 is a distinct disease with different severe-risk patterns and post-COVID complications.</span>
       </div>
       <div class="myth-item">
         <span class="myth-label">"Norovirus is just a cruise ship problem"</span>
-        <span class="myth-fact error">❌ WRONG; most outbreaks occur in restaurants, schools, healthcare settings, and other shared spaces.</span>
+        <span class="myth-fact error"><span aria-hidden="true">❌</span> WRONG; most outbreaks occur in restaurants, schools, healthcare settings, and other shared spaces.</span>
       </div>
       <div class="myth-item">
         <span class="myth-label">"You can't get malaria in cities"</span>
@@ -981,15 +987,15 @@
       </div>
       <div class="myth-item">
         <span class="myth-label">"TB is a thing of the past"</span>
-        <span class="myth-fact error">❌ WRONG; 10.7M people fell ill in 2024, and TB remains a leading infectious killer globally.</span>
+        <span class="myth-fact error"><span aria-hidden="true">❌</span> WRONG; 10.7M people fell ill in 2024, and TB remains a leading infectious killer globally.</span>
       </div>
       <div class="myth-item">
         <span class="myth-label">"Antibiotics treat all infections"</span>
-        <span class="myth-fact error">❌ WRONG; antibiotics only work on bacteria, not viruses (flu, norovirus, dengue, HIV) or parasites like malaria.</span>
+        <span class="myth-fact error"><span aria-hidden="true">❌</span> WRONG; antibiotics only work on bacteria, not viruses (flu, norovirus, dengue, HIV) or parasites like malaria.</span>
       </div>
       <div class="myth-item">
         <span class="myth-label">"Dengue is only in tropical countries"</span>
-        <span class="myth-fact error">❌ WRONG; local transmission now occurs in France, Croatia, and Madeira due to climate change.</span>
+        <span class="myth-fact error"><span aria-hidden="true">❌</span> WRONG; local transmission now occurs in France, Croatia, and Madeira due to climate change.</span>
       </div>
     </div>
   </div>
@@ -998,7 +1004,7 @@
 <!-- ==================== EPIDEMIOLOGICAL CURVE ==================== -->
 <section class="section">
   <div class="section-header">
-    <h2 aria-label="Seasonal Patterns">📈 Seasonal Patterns</h2>
+    <h2 aria-label="Seasonal Patterns"><span aria-hidden="true">📈</span> Seasonal Patterns</h2>
     <div class="section-line"></div>
     <p class="section-intro">Infectious diseases follow seasonal patterns driven by climate, human behavior, and vector populations.</p>
   </div>
@@ -1044,7 +1050,7 @@
 <footer id="footer">
   <div class="footer-content">
     <div class="footer-brand">
-      <h3 aria-label="Global Infectious Diseases Hub">🧬 Global Infectious Diseases Hub</h3>
+      <h3 aria-label="Global Infectious Diseases Hub"><span aria-hidden="true">🧬</span> Global Infectious Diseases Hub</h3>
       <p>Educating the public on the world's most common infections, their causes, transmission, burden, and prevention.</p>
     </div>
     <div class="footer-stats">

@@ -22,8 +22,8 @@ CDC, WHO, UNAIDS, Global Burden of Disease Study 2023 (IHME), ECDC and peer-revi
 ## Tech Stack
 
 - **HTML5**: Semantic structure, anchor-based scrolling navigation
-- **CSS3**: Dark-themed responsive UI (~1,500 lines), glassmorphism cards, animated gradients, CSS custom properties
-- **Vanilla JS**: Scroll-triggered animations, animated counters, IntersectionObserver, mobile nav toggle (~200 lines)
+- **CSS3**: Dark-themed responsive UI (~560 lines), glassmorphism cards, animated gradients, CSS custom properties
+- **Vanilla JS**: Scroll-triggered animations, animated counters, IntersectionObserver, mobile nav toggle (~178 lines)
 
 Zero dependencies. No build step required.
 
