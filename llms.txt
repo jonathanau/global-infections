@@ -1,0 +1,42 @@
+# Global Infectious Diseases: Interactive Infographic Hub
+
+> An educational, single-page static site visualizing the global burden of infectious diseases and prevention. Built by Jonathan Au.
+
+## What This Site Contains
+
+- Global disease burden rankings using GBD 2023 DALYs
+- Profiles of 10 major infectious diseases: COVID-19, lower respiratory infections, diarrhoeal diseases, HIV/AIDS, malaria, tuberculosis, hepatitis B and C, influenza, dengue, and norovirus
+- Side-by-side comparison table of pathogen type, transmission, deaths, and vaccine status
+- Co-infection interaction summaries (HIV + TB, flu + bacterial pneumonia, dengue serotype shift, etc.)
+- Transmission route explanations (airborne, fecal-oral, vector-borne, bloodborne)
+- Disease amplification in enclosed environments
+- Evidence-based universal prevention strategies
+- Myths vs. facts section
+- Seasonal disease patterns by region
+
+## Key Statistics (GBD 2023 / WHO / CDC)
+
+- Lower Respiratory Infections: 98.7 million DALYs (2023), 2.50 million deaths
+- Diarrhoeal Diseases: 56.5 million DALYs (2023)
+- Malaria: 51.6 million DALYs (2023), 610,000 deaths (2024), 282 million cases (2024)
+- HIV/AIDS: 45.1 million DALYs (2023), 630,000 deaths (2024), 40.8 million living with HIV
+- Tuberculosis: 43.6 million DALYs (2023), 10.7 million cases (2024), 1.23 million deaths (2024)
+- Norovirus: 685 million cases/year, ~200,000 deaths/year globally
+- Dengue: 14.6 million reported cases (2024), >12,000 reported deaths (2024)
+- Influenza: ~1 billion estimated cases/year, 290,000-650,000 respiratory deaths/year
+- CMNN DALYs total (GBD 2023): 681 million
+
+## Data Sources
+
+- Global Burden of Disease Study 2023 (IHME / The Lancet): https://doi.org/10.1016/S0140-6736(25)01637-X
+- WHO Global TB Report 2025: https://www.who.int/publications/i/item/9789240116924
+- WHO Global Hepatitis Report 2026: https://www.who.int/teams/global-hiv-hepatitis-and-stis-programmes/hepatitis/reports/global-hepatitis-report-2026
+- UNAIDS Global AIDS Update 2025: https://www.unaids.org/en/UNAIDS-global-AIDS-update-2025
+- WHO Malaria data: https://www.who.int/data/gho/data/themes/malaria/GHO/malaria
+- WHO Dengue fact sheet: https://www.who.int/en/news-room/fact-sheets/detail/dengue-and-severe-dengue
+- CDC Norovirus: https://www.cdc.gov/norovirus/
+- CDC Vessel Sanitation Program: https://www.cdc.gov/vessel-sanitation/
+
+## License
+
+MIT — free to cite with attribution to Jonathan Au / https://infectious-diseases.onrender.com/
