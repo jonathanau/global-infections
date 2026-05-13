@@ -31,6 +31,15 @@ Zero dependencies. No build step required.
 
 This project is intended for public health education and awareness. See the [LICENSE](LICENSE) file for details.
 
+## Deployment Notes
+
+This site is hosted on Render. The following response headers must be configured in the Render dashboard under your service's "Redirect/Rewrite Rules & Header Settings":
+
+- **X-Frame-Options**: `SAMEORIGIN` — prevents clickjacking by blocking the site from being embedded in iframes on other domains.
+- **Strict-Transport-Security**: Set automatically by Render for custom domains (1-year max-age), but verify it is present in response headers after deployment.
+
+These settings cannot be set via `<meta>` tags and must be applied at the hosting layer.
+
 ## Contributing
 
 Contributions, corrections and data updates are welcome. Please open an issue or submit a pull request.
