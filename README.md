@@ -1,5 +1,7 @@
 # Global Infectious Diseases: Interactive Infographic Hub
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 An educational, single-page static site that visualizes global infectious disease burden and prevention. Built entirely with HTML, CSS and vanilla JavaScript.
 
 ## What's Inside
